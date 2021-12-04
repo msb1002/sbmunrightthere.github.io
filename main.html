@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <style>
+    h2,p {
+      color:white;
+    }
+    body {
+        background: linear-gradient(132deg, #2c3571,#990000);
+        background-size: 400% 400%;
+        animation: BackgroundGradient 45s ease infinite;
+    }
+
+    @keyframes BackgroundGradient {
+        0% {background-position: 0% 50%;}
+        50% {background-position: 100% 50%;}
+        100% {background-position: 0% 50%;}
+    }
+    a, li{
+      color:white;
+      text-decoration:none;
+    }
+    h1 {
+      font-size:60px;
+      text-align: center;
+
+    }
+    .viewing{
+      color:red;
+      text-align:center;
+      text-decoration:underline;
+    }
+    #grid ol{
+      border-right:1px solid gray;
+      width: 100px;
+      margin:0;
+      padding:20px;
+      padding-left:25px;
+
+    }
+    #grid{
+      display:grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid #content{
+      padding-left:25px;
+    }
+
+    @media(max-width:800px){
+      #grid {
+        display:block;
+      }
+      #grid ol{
+        border-right:none;
+      }
+       h1{
+        border-bottom:none;
+      }
+    }
+    h3{
+      color:white;
+      margin:0;
+    }
+    </style>
+    <h1><a href="menubar.html">Sun Bin Mun</a></h1>
+  <div id = "grid">
+    <ol>
+      <i><h3>MENU</h3></i>
+      <br></br>
+      <li><a href="profile.html">
+        Profile</a></li>
+        <br></br>
+      <li><a href="links.html">
+        Links</a></li>
+        <br></br>
+      <li><a href="publication.html">
+        Publications</a></li>
+        <br></br>
+      <li><a href="award.html">
+        Awards & Achievements</a></li>
+        <br></br>
+      <li><a href="experience.html">
+        Experience</a></li>
+        <br></br>
+      <li><a href="ongoing.html">
+        Ongoing Projects</a></li>
+        <br></br>
+      <li><a href="skill.html">
+        Skills</a></li>
+
+
+    </ol>
+  <div id = "content">
+<h2>Title</h2>
+<p>
+  you put the content
+</p>
+  </div>
+</div>
+  </body>
+</html>

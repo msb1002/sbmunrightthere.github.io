@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel = "stylesheet" href="rotate.css">
+    <title></title>
+  </head>
+  <body>
+    <style>
+
+    body {
+      background-image: url("python.jpg");
+      background-size: 100% 120%;
+    }
+
+    a{
+      color:white;
+      text-decoration:none;
+    }
+    h1 {
+      font-size:60px;
+      text-align: center;
+
+    }
+    .viewing{
+      color:green;
+      text-align:center;
+      text-decoration:underline;
+    }
+    #grid ol{
+      border-right:1px solid gray;
+      width: 100px;
+      margin:0;
+      padding:20px;
+      padding-left:25px;
+
+    }
+    #grid{
+      display:grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid #content{
+      padding-left:25px;
+    }
+
+    @media(max-width:800px){
+      #grid {
+        display:block;
+      }
+      #grid ol{
+        border-right:none;
+      }
+       h1{
+        border-bottom:none;
+      }
+    }
+    #collar{
+      color:003ba8
+    }
+    h2{
+      color:#003ba8 ;
+    }
+    li{
+      color: #b58217
+    }
+    h3{
+      color:#003ba8;
+      margin:0;
+    }
+    </style>
+    <h1><a href="menubar.html">Sun Bin Mun</a></h1>
+  <div id = "grid">
+    <ol>
+      <i><h3>MENU</h3></i>
+      <br></br>
+      <li><a href="profile.html">
+        Profile</a></li>
+        <br></br>
+      <li><a href="links.html">
+        Links</a></li>
+        <br></br>
+      <li><a href="publication.html">
+        Publications</a></li>
+        <br></br>
+      <li><a href="award.html">
+        Awards & Achievements</a></li>
+        <br></br>
+      <li><a href="experience.html">
+        Experience</a></li>
+        <br></br>
+      <li><a href="ongoing.html">
+        Ongoing Projects</a></li>
+        <br></br>
+      <li><a href="skill.html" class = "viewing">
+        Skills</a></li>
+
+
+    </ol>
+  <div id = "content">
+    <div class = "box">
+      Hello! I am a
+      <div class = "word">
+
+  <span>Computer&nbspScientist</span>
+  <span>Freelance&nbspProgrammer</span>
+  <span>Data&nbspEngineer</span>
+  <span>Music&nbspEnthusiast</span>
+  </div>
+</div>
+<div id="collar"><h2>Skills</h2></div>
+<p>
+  <h3>Human Language</h3>
+  <ul>
+    <li>English (Fluent)</li>
+    <li>Korean (Mother Language)</li>
+    <li>Spanish(intermediate level)</li>
+  </ul>
+  <h3>Programming Language</h3>
+  <ul>
+    <li>Python</li>
+    <li>HTML / CSS / JavaScript (Web Application)</li>
+    <li> C / C++ Programming </li>
+    <li><strike>R Programming</strike></li>
+  </ul>
+  <h3>Data Tools</h3>
+    <ul>
+      <li>Google Analytics</li>
+      <li>Google DoubleClick Ad Exchange</li>
+      <li><strike>AWS (Amazon Web Service)</strike></li>
+      <li>Vpon AD Network (Intra BI)</li>
+    </ul>
+
+  <h3>Others</h3>
+    <ul>
+      <li>GarageBand (Music Composition)</li>
+      <li>Anaconda (Spyder, Jupyter)</li>
+      <li><strike>Mathlab / SAS</strike></li>
+
+
+</p>
+  </div>
+</div>
+  </body>
+</html>

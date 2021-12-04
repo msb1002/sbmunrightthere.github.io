@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel = "stylesheet" href="rotate.css">
+    <title></title>
+  </head>
+  <body>
+    <style>
+    figure {
+        display: inline-block;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .textWithBlurredBg2{
+        width:500px;
+        height:180px;
+        display:inline-block;
+        position:relative;
+        transition:.3s;
+        margin:4px;
+      }
+
+      .textWithBlurredBg2 img{
+        width:100%;
+        height:100%;
+        transition:.3s;
+        border-radius:4px;
+      }
+
+      .textWithBlurredBg2:hover img{
+        filter:blur(2px) brightness(60%);
+      }
+
+      .textWithBlurredBg2 :not(img){
+        position:absolute;
+        z-index:1;
+        top:30%;
+        width:100%;
+        text-align:center;
+        color:white;
+        opacity:0;
+        transition:.3s;
+      }
+
+      .textWithBlurredBg2 h3{
+        top:50%
+      }
+
+      .textWithBlurredBg2:hover :not(img){
+        opacity:1;
+      }
+
+    .textWithBlurredBg{
+        width:300px;
+        height:300px;
+        display:inline-block;
+        position:relative;
+        transition:.3s;
+        margin:4px;
+      }
+
+      .textWithBlurredBg img{
+        width:100%;
+        height:100%;
+        transition:.3s;
+        border-radius:4px;
+      }
+
+      .textWithBlurredBg:hover img{
+        filter:blur(2px) brightness(60%);
+      }
+
+      .textWithBlurredBg :not(img){
+        position:absolute;
+        z-index:1;
+        top:30%;
+        width:100%;
+        text-align:center;
+        color:white;
+        opacity:0;
+        transition:.3s;
+      }
+
+      .textWithBlurredBg h3{
+        top:50%
+      }
+
+      .textWithBlurredBg:hover :not(img){
+        opacity:1;
+      }
+    #center{
+      text-align: center;
+    }
+    h2, h3, li {
+      color:white;
+    }
+    body {
+        background: linear-gradient(#ff5cc2, #ffff99);
+        background-size: 100% 100%;
+    }
+
+    a{
+      color:white;
+      text-decoration:none;
+    }
+    .font{
+      text-align:center;
+      float:left;
+    }
+    h1 {
+      font-size:60px;
+      text-align: center;
+
+    }
+    .viewing{
+      color:blue;
+      text-align:center;
+      text-decoration:underline;
+    }
+    #grid ol{
+      border-right:1px solid white;
+      width: 100px;
+      margin:0;
+      padding:20px;
+      padding-left:25px;
+
+    }
+    #grid{
+      display:grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid #content{
+      padding-left:25px;
+    }
+
+    h3{
+      margin:0;
+    }
+    #resize_opp{
+      width:300px;
+      height:auto;
+    }
+
+    </style>
+    <h1><a href="menubar.html">Sun Bin Mun</a></h1>
+  <div id = "grid">
+    <ol>
+      <i><h3>MENU</h3></i>
+      <br></br>
+      <li><a href="profile.html" class = "viewing">
+        Profile</a></li>
+        <br></br>
+      <li><a href="links.html">
+        Links</a></li>
+        <br></br>
+      <li><a href="publication.html">
+        Publications</a></li>
+        <br></br>
+      <li><a href="award.html">
+        Awards & Achievements</a></li>
+        <br></br>
+      <li><a href="experience.html">
+        Experience</a></li>
+        <br></br>
+      <li><a href="ongoing.html">
+        Ongoing Projects</a></li>
+        <br></br>
+      <li><a href="skill.html">
+        Skills</a></li>
+    </ol>
+  <div id = "content">
+    <div class = "box">
+      Hello! I am a
+      <div class = "word">
+
+  <span>Computer&nbspScientist</span>
+  <span>Freelance&nbspProgrammer</span>
+  <span>Data&nbspEngineer</span>
+  <span>Music&nbspEnthusiast</span>
+  </div>
+  </p>
+    </div>
+<h2>Education</h2>
+<p>
+  <div class="textWithBlurredBg">
+    <img src="hkust.png" class="figure">
+    <a href="https://www.ust.hk/" target="_blank"><h2>HKUST</h2></a>
+    <h3>Data Science and Technology</h3>
+  </div>
+
+  <div class="textWithBlurredBg">
+    <img src = "hafs.jpg" class="figure" >
+    <a href="http://hafs.hs.kr/" target="_blank"><h2>HAFS</h2></a>
+    <br></br>
+    <h3>International Course</h3>
+  </div>
+  <!--in case you want link to another page-->
+  <div class="textWithBlurredBg">
+    <img src = "caltech.png" class = "figure">
+    <a href="http://www.caltech.edu/" target="
+    "><h2>Yang Chung Middle School</h2></a>
+    <h3>100th Graduate</h3>
+  </div>
+</p>
+<h2>Occupation</h2>
+<p>
+  <div class="textWithBlurredBg2">
+    <img src = "vpon.jpg.png" class = "resize_opp">
+    <a href="http://www.vpon.com/" target="_blank">
+    <h2>Vpon Big Data Group</h2></a>
+    <h3>CM Data Team Summer Internship</h3>
+  </div>
+
+  <div class="textWithBlurredBg2">
+    <img src = "headstart.png" class = "resize_opp">
+    <a href="http://headstart.ust.hk" target="_blank
+    "><h2>HKUST @ Headstart</h2></a>
+    <h3>Fellow Alumni</h3>
+  </div>
+
+</div>
+</div>
+</div>
+  </body>
+</html>
